@@ -3,7 +3,6 @@
 We aim to develop a set of modular research libraries to systematically investigate several core problems in portfolio construction.  
 The order of execution across topics is flexible — progress can be made in parallel, provided that tangible outputs are delivered regularly for each area.
 
----
 
 ## Consultant Deliverables and Iterative Approach
 
@@ -17,7 +16,6 @@ The consultant is expected to deliver an initial **Version 0 (v0)** of each of t
 
 This approach ensures continuous progress and early visibility of results across all modules before moving to more advanced refinements.
 
----
 
 ## General Portfolio Assumptions
 
@@ -28,7 +26,6 @@ Across all research modules, we assume the following characteristics for our por
 - **Available Data:** Each dataset will include adjusted daily returns, adjusted prices, volumes, average daily volumes (ADVs), and alpha signals.  
 - **Alpha Definition:** An *alpha* represents a stock-level predictive signal, typically standardized (e.g., as a z-score) across the universe. Higher values indicate stronger buy signals, while lower values suggest short or sell preferences.
 
----
 
 ## 1. Optimal Weighting
 
@@ -49,7 +46,6 @@ Given a daily alpha signal that is predictive of future returns, the objective i
 ### References
 Grinold & Kahn, Boyd et al., and other quantitative portfolio optimization literature.
 
----
 
 ## 2. Volatility Targeting
 
@@ -68,7 +64,6 @@ Once daily portfolio weights are determined, we aim to apply dynamic leverage to
 
 Each method will be backtested to compare the **realized volatility** with the **target volatility**, evaluating stability, return impact, and rebalancing efficiency.
 
----
 
 ## 3. Optimal Strategy Allocation
 
@@ -85,18 +80,4 @@ We will evaluate several allocation methodologies, including:
 - **Black–Litterman Framework** (combining priors with strategy-level views)
 
 Each approach will be benchmarked for robustness, interpretability, and sensitivity to estimation error, using both simulated and historical strategy data.
-
----
-
-## Suggested Next Step (Optional)
-
-To support project planning, we may include a simple deliverable tracking table such as:
-
-| Topic | v0 Scope | Refinement Goals | Expected Outputs |
-|-------|-----------|------------------|------------------|
-| Optimal Weighting | Prototype weight optimizer from alpha signals | Add realistic constraints and backtesting | Core weighting module |
-| Volatility Targeting | Basic volatility targeting logic using time-series volatility | Add covariance-based approach and dynamic leverage | Vol targeting library |
-| Strategy Allocation | Basic combination of multiple strategy weights | Add optimization frameworks (BL, risk parity) | Allocation library |
-
----
 
